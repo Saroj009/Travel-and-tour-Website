@@ -1,0 +1,66 @@
+@import "./varaibles.scss";
+
+// navbar
+
+.navbar-container {
+    // background: $primary-color;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    .nav-link-section > ul > li > a {
+        position: relative;
+        color: $white;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .nav-link-section > ul > li > a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -8px;
+        background: $white;
+        transition: 0.3s;
+    }
+    .nav-link-section > ul > li > a:hover::after {
+        width: 100%;
+    }
+    .nav-link-section > ul > li > .active::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: -8px;
+        background: $white;
+        transition: 0.3s;
+    }
+    .logo img {
+        width: 10%;
+        height: 8%;
+        object-fit: cover;
+    }
+}
+
+.navbar-container.active{
+    background: $primary-color;
+}
+
+// navbar ends
+
+#carouselExampleCaptions {
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100%;
+    width: 100%;
+    .carousel-inner {
+        .carousel-item {
+            img {
+                max-height: 100vh;
+                object-fit: cover;
+            }
+        }
+    }
+}

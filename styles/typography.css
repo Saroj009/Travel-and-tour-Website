@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
+/* 
+0 - 320px;         Small Phone
+320px - 568px;     Normal Phone
+568px - 768px;     Tablet Portrait
+768px - 992px;     Tablet Landscape 
+992px - 1200px;    Laptop 
+1200px - 1400px;   Desktop 
+1400px +;          Big Desktop
+*/
+/*
+$breakpoint argument choice:
+- small-phone
+- phone
+- tab-port
+- tab-land
+- laptop
+- desktop
+- big-desktop
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul, p, li {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background-color: #2095ae;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #2095ae;
+  color: #ffffff;
+}
+
+.container-max {
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+a {
+  color: #121926;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 3.625rem;
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+@media only screen and (max-width: 75em) {
+  h1,
+  .h1 {
+    font-size: 2.8rem;
+    line-height: 3.225rem;
+    letter-spacing: -0.03rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.025rem;
+  }
+}
+@media only screen and (max-width: 35.5em) {
+  h1,
+  .h1 {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 2.625rem;
+  letter-spacing: -0.025rem;
+  margin: 0;
+}
+@media only screen and (max-width: 75em) {
+  h2,
+  .h2 {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h2,
+  .h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 35.5em) {
+  h2,
+  .h2 {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.875rem;
+  letter-spacing: -0.025rem;
+  margin: 0;
+}
+@media only screen and (max-width: 75em) {
+  h3,
+  .h3 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h3,
+  .h3 {
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+  }
+}
+@media only screen and (max-width: 35.5em) {
+  h3,
+  .h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  letter-spacing: -0.02rem;
+  margin: 0;
+}
+@media only screen and (max-width: 75em) {
+  h4,
+  .h4 {
+    font-size: 1.225rem;
+    line-height: 1.4rem;
+  }
+}
+@media only screen and (max-width: 35.5em) {
+  h4,
+  .h4 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.025rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  letter-spacing: -0.02rem;
+  margin: 0;
+}
+@media only screen and (max-width: 75em) {
+  h5,
+  .h5 {
+    font-size: 1.12rem;
+    line-height: 1.28rem;
+  }
+}
+
+.body-1 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  letter-spacing: -0.00625rem;
+  margin: 0;
+}
+
+p,
+.body-2 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4rem;
+  letter-spacing: -0.00625rem;
+  margin: 0;
+}
+
+.small {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1rem;
+  letter-spacing: -0.00625rem;
+}
+@media only screen and (max-width: 48em) {
+  .small {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: -0.00625rem;
+  }
+}/*# sourceMappingURL=typography.css.map */
